@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E230A161-C12F-4420-8AAA-FCD3A054B9B9}</ProjectGuid>
+    <ProjectGuid>{6A768180-493C-4985-8615-80AC3EEED5CC}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ZacharyKniebel.Feature.LocalContent</RootNamespace>
-    <AssemblyName>ZacharyKniebel.Feature.LocalContent</AssemblyName>
+    <RootNamespace>ZacharyKniebel.Feature.BranchPresets</RootNamespace>
+    <AssemblyName>ZacharyKniebel.Feature.BranchPresets</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -137,14 +137,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rules\Actions\RelinkDescendantsAndSelfBranchDatasources.cs" />
+    <Compile Include="Rules\Actions\RelinkItemBranchDatasources.cs" />
+    <Compile Include="Rules\Actions\RelinkItemBranchReferencesInHierarchy.cs" />
+    <Compile Include="Utils\BranchUtils.cs" />
+    <Compile Include="Utils\LayoutUtils.cs" />
+    <Content Include="App_Config\Include\Feature\BranchPresets.Rules.config" />
     <Content Include="packages.config" />
-    <Content Include="App_Config\Include\Feature\LocalContent.Rules.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Foundation\Rules\code\ZacharyKniebel.Foundation.Rules.csproj">
       <Project>{4ac38cf2-a8c0-4bed-ac8f-1c69fcb90b5a}</Project>
       <Name>ZacharyKniebel.Foundation.Rules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\ZacharyKniebel.Foundation.SitecoreExtensions.csproj">
+      <Project>{0ea9b4dd-9b2c-4339-b853-c3ceefb0559d}</Project>
+      <Name>ZacharyKniebel.Foundation.SitecoreExtensions</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

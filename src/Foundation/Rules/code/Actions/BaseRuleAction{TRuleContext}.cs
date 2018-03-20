@@ -55,6 +55,6 @@ namespace ZacharyKniebel.Foundation.Rules.Actions
         /// <param name="ruleContext">
         /// The rule context.
         /// </param>
-        protected abstract void ApplyRule([NotNull] TRuleContext ruleContext);
+        protected abstract void ApplyRule(TRuleContext ruleContext);
     }
 }

@@ -24,7 +24,7 @@ namespace ZacharyKniebel.Foundation.Rules.Conditions
         /// True if the item has layout details for the default device,
         /// otherwise False.
         /// </returns>
-        protected override sealed bool Execute([NotNull] TRuleContext ruleContext)
+        protected sealed override bool Execute([NotNull] TRuleContext ruleContext)
         {
             Assert.IsNotNull(ruleContext, "ruleContext");
             Assert.IsNotNull(ruleContext.Item, "ruleContext.Item");

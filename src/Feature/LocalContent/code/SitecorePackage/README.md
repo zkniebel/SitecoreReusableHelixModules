@@ -1,0 +1,1 @@
+- /master/sitecore/system/Settings/Rules/Local Content - Add From Template Pipeline/*
