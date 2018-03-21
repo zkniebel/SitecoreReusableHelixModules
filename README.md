@@ -28,6 +28,8 @@ The *Foundation.Rules* module provides the necessary base classes, abstractions,
   - Item hierarchy inherits template
 - Actions
   - Create child item 
+  - Set Field Value
+  - Assign Workflow
   
 #### Dependencies
 - Foundation.SitecoreExtensions
@@ -53,6 +55,15 @@ A small module containing only a configuration file to run the necessary rule fr
 
 #### Highlights
 - Rule for adding child item whenever an item that inherits a specific template is added from a branch template (e.g. add local content folders)
+
+#### Dependencies
+- Foundation.Rules (Content depends on the content and code from Foundation.Rules)
+
+### Feature.AuthoringGovernance
+Another small module containing only a configuration file to run the necessary rules from the *addFromTemplate* pipeline, as well as the items for the rules. This module is intended to have more functionality added to it.
+
+#### Highlights
+- Rule that assigns a specific workflow to a newly created item iff the item inherits from a specific template and the user has a specific role
 
 #### Dependencies
 - Foundation.Rules (Content depends on the content and code from Foundation.Rules)

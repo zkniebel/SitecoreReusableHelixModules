@@ -1,0 +1,1 @@
+- /master/sitecore/system/Settings/Rules/Authoring Governance - Add From Template Pipeline/*
