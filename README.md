@@ -2,7 +2,11 @@
 A reusable set of Helix-compliant modules for Sitecore 8+. These modules can be used on any project, and they can be used together or separately. Note that some modules have dependencies (all valid), so it is important to remember to look at the those dependencies when you take only a subset of the modules.
 
 ## A note on serialization...
-As one who works regularly on both Unicorn and TDS projects, I know that it can be frustrating when to want to use/reuse a Helix module only to find that the desired module uses the other serialization mechanism. For this reason, I have intentionally excluded all serialization mechanisms and include, instead, a Sitecore Package in (the */SitecorePackage* folder of) each module. Additionally, I include a *README* in the same folder to list the paths of all of the items included in each package. This way, you can add the items to whichever serialization tool you are using.
+As one who works regularly on both Unicorn and TDS projects, I know that it can be frustrating when to want to use/reuse a Helix module only to find that the desired module uses the other serialization mechanism. 
+
+For this reason, **I have intentionally excluded all serialization mechanisms and included, instead, a Sitecore Package in (the */SitecorePackage* folder of) each module**. 
+
+Additionally, I include a *README* in the same folder to list the paths of all of the items included in each package. This way, you can easily add the items to whichever serialization tool you are using.
 
 ## Included Modules
 The below are the modules that are currently included in the repo, and their descriptions:
