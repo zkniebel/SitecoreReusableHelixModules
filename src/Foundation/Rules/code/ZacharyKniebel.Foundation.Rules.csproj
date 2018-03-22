@@ -147,7 +147,7 @@
     <Compile Include="Conditions\BaseItemHierarchyOperatorCondition{TRuleContext}.cs" />
     <Compile Include="Conditions\ItemInformation\ItemCreatedFromAnyBranch.cs" />
     <Compile Include="Conditions\ItemInformation\ItemCreatedFromBranch.cs" />
-    <Compile Include="Conditions\ItemInformation\ItemHierarchyInheritsTemplate.cs" />
+    <Compile Include="Conditions\ItemHierarchy\ItemHierarchyInheritsTemplate.cs" />
     <Compile Include="Configuration\ItemHierarchyOperatorSettings.cs" />
     <Compile Include="Extensions\ItemExtensions.cs" />
     <Compile Include="IPipelineArgsRuleContext{TArgs}.cs" />
@@ -156,14 +156,17 @@
     <Compile Include="Operators\ItemHierarchy\ItemHierarchyOperatorUtils.cs" />
     <Compile Include="Operators\ItemHierarchy\ItemHierarchyType.cs" />
     <Compile Include="PipelineArgsRuleContext{TArgs}.cs" />
-    <Compile Include="Pipelines\AddFromTemplate\AddFromTemplateRuleContext.cs" />
-    <Compile Include="Pipelines\AddFromTemplate\AddFromTemplateRulesDisabler.cs" />
-    <Compile Include="Pipelines\AddFromTemplate\AddFromTemplateRulesProcessor.cs" />
+    <Compile Include="Pipelines\GetRenderedRuleElements\GetElementFolders.cs" />
+    <Compile Include="Registrations\Pipelines\AddFromTemplate\AddFromTemplateRuleContext.cs" />
+    <Compile Include="Registrations\Pipelines\AddFromTemplate\AddFromTemplateRulesDisabler.cs" />
+    <Compile Include="Registrations\Pipelines\AddFromTemplate\AddFromTemplateRulesProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RuleContext{TArgs}.cs" />
     <Compile Include="RuleManager.cs" />
     <Content Include="packages.config" />
     <Content Include="App_Config\Include\Foundation\Rules.ItemHierarchyOperators.config" />
+    <Content Include="App_Config\Include\Foundation\Rules.Registrations.Pipelines.config" />
+    <Content Include="App_Config\Include\Foundation\Rules.Pipelines.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
   </ItemGroup>
   <ItemGroup>

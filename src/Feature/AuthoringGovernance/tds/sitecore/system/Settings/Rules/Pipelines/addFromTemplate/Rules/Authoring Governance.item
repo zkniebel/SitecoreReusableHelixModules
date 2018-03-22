@@ -1,0 +1,113 @@
+----item----
+version: 1
+id: {F9643BC2-EC63-4ED4-85CD-2061A7E60467}
+database: master
+path: /sitecore/system/Settings/Rules/Pipelines/addFromTemplate/Rules/Authoring Governance
+parent: {9B5DC024-1195-479E-9215-8F2B48B18551}
+name: Authoring Governance
+master: {00000000-0000-0000-0000-000000000000}
+template: {D9BDF22F-6E17-47F3-AB64-49C717BA92DA}
+templatekey: Rule
+created: 20180322T154920Z
+
+----field----
+field: {908EF45D-4940-4B6A-857D-3739BA4ACF8F}
+name: Rule
+key: rule
+content-length: 1433
+
+<ruleset>
+  <rule uid="{4D1F5A56-C611-4BA8-B86A-C5C8A5E0EC24}" name="ASSIGN WORKFLOW BASED ON USER ROLE">
+    <conditions>
+      <and uid="5A2A6FBE1820494FAAB46F8F60C30F5D">
+        <condition id="{62E25266-5519-4AEE-9BB0-6F588148DCF5}" uid="7FE1EA58B14945D4B3B433E917DDF710" except="true" />
+        <and uid="D8B676BA48E74566877114162AC95E9B">
+          <condition id="{153E1BF6-3E9B-4737-9F1D-E18571692FA5}" uid="F64B4F31B94D469C971A00804E1A0CF2" operatorid="{7CF9AE11-C694-4127-BF47-B8D24FFAECF1}" />
+          <condition id="{B88D5A83-A909-4BC5-90E7-7A8804348CFA}" uid="8228170CE122487D98D5137FAFF32541" />
+        </and>
+      </and>
+    </conditions>
+    <actions>
+      <action id="{09279177-563D-4BEF-9ADD-4B5C3138358B}" uid="6E054C201FC7462E88B70A12058C40AF" />
+    </actions>
+  </rule>
+  <rule uid="{87768D1F-A6BF-4D86-B634-05EFFB1663F7}" name="ADD LOCAL CONTENT FOLDER">
+    <conditions>
+      <and uid="393D6913117546FE81223386D3432784">
+        <condition id="{62E25266-5519-4AEE-9BB0-6F588148DCF5}" uid="FE9F4F88885D4BC0A1A973D5766CA2B4" except="true" />
+        <condition id="{153E1BF6-3E9B-4737-9F1D-E18571692FA5}" uid="6305E3A7CC9441418944C8C6781FF0CC" operatorid="{7CF9AE11-C694-4127-BF47-B8D24FFAECF1}" />
+      </and>
+    </conditions>
+    <actions>
+      <action id="{D0ACD2D4-946D-4DBF-94A8-44896B33D88E}" uid="36F5390CC06A4BAC90B142EF0BF1BF6A" />
+    </actions>
+  </rule>
+</ruleset>
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+100
+----field----
+field: {9135200A-5626-4DD8-AB9D-D665B8C11748}
+name: __Never publish
+key: __never publish
+content-length: 1
+
+1
+----version----
+language: en
+version: 1
+revision: 7174dc70-3a08-4416-b0b8-be6719905eed
+
+----field----
+field: {45CF9130-802A-41BE-B3EB-C02F657DCC2E}
+name: Name
+key: name
+content-length: 50
+
+Authoring Governance - Dynamic Workflow Assignment
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180321T202546Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7174dc70-3a08-4416-b0b8-be6719905eed
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180322T180042Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

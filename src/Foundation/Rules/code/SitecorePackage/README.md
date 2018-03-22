@@ -1,7 +1,0 @@
-- /master/sitecore/system/Settings/Rules/Definitions/Elements/Item Creation - Custom/*
-- /master/sitecore/system/Settings/Rules/Definitions/Elements/Item Hierarchy - Custom/*
-- /master/sitecore/system/Settings/Rules/Definitions/Item Hierarchy Operators/*
-- /master/sitecore/system/Settings/Rules/Definitions/Macros/ItemHierarchy
-- /master/sitecore/system/Settings/Rules/Definitions/Tags/Item Creation/*
-- /master/sitecore/system/Settings/Rules/Definitions/Elements/Fields - Custom/*
-- /master/sitecore/system/Settings/Rules/Definitions/Elements/Workflows - Custom/*

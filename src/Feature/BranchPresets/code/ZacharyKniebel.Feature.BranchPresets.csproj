@@ -142,7 +142,6 @@
     <Compile Include="Rules\Actions\RelinkItemBranchReferencesInHierarchy.cs" />
     <Compile Include="Utils\BranchUtils.cs" />
     <Compile Include="Utils\LayoutUtils.cs" />
-    <Content Include="App_Config\Include\Feature\BranchPresets.Rules.config" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
   </ItemGroup>
