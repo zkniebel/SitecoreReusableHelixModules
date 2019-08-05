@@ -60,6 +60,15 @@ A powerful module that adds a robust Branch Presets implementation, enabling des
 #### Dependencies
 - Foundation.Rules
 
+#### Setup/Testing Instructions
+The following instructions were assembled to guide you in rapidly setting up and experimenting with Branch Presets.  
+
+1. Build and publish the code and deploy the Sitecore items from the solution
+2. Create a branch template if you don't already have one. For your first time using Branch Presets, it's recommended that you create a branch template that includes at least two pages that have one or more local datasources (i.e. datasources that live under the owning page item) each, so that you can witness the full power of the ~~dark side~~ Branch Presets. Note that you can also try putting your datasources elsewhere within the branch and they will still relink, so feel free to try that out too. Note that you can use the Experience Editor for branch templates too. 
+3. Update the field values of the items in your branch templates as needed. If this is your first time playing with Branch Presets, I also recommend setting some link, reference, and multireference fields to point at items within the branch so that you can see that they'll be relinked for you, as well as the datasources. Also, if this is your first time using Branch Presents, I recommend adding a rendering that references a datasource that *does not* live within the branch and some field references to items that *do not* live within the branch so that you can see that they won't be modified.
+4. Navigate to your _/sitecore/system/settings/rules/pipelines/addFromTemplate/rules/Branch Presets_ item (installed from the TDS projects included in the repo) and edit the rule to by setting the "[specific]" template referenced in the "and where the item's [descendants and self] has or inherits from the [specific] template" rule condition to your "Base Page" template (or whatever you call it). If you don't have a template like that (yikes!) then do whatever you think is best to make it work for your solution (e.g. a template that all page templates inherit)
+5. At this point, everything should be in place and ready for you to begin testing, so start creating instances of your branch template and check out the datasources of your renderings and field references when you do. You should see that all references to items defined in the branch template will have been relinked to the new instances of those items.
+
 ---
 
 ### Feature.AuthoringGovernance
